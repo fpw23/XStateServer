@@ -1,0 +1,21 @@
+{
+    "sourceMap": true,
+    "presets": [
+        [
+            "@babel/preset-env",
+            {
+                "targets": {
+                    "node": true
+                }
+            }
+        ]
+    ],
+    "plugins": [
+        "@babel/plugin-transform-async-to-generator",
+        ["module-resolver", {
+            "alias": {
+              "common-config": "./src/server/settings.js"
+            }
+        }]
+      ]
+}
